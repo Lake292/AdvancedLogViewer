@@ -55,6 +55,7 @@
             this.patternError = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateFormatError = new System.Windows.Forms.ErrorProvider(this.components);
             this.editSelectedPatternGroupBox = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tryOnCurrentLogButton = new System.Windows.Forms.Button();
             this.dateFormatPatternsListView = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -254,7 +255,7 @@
             // patternEdit
             // 
             this.patternEdit.HideSelection = false;
-            this.patternEdit.Location = new System.Drawing.Point(12, 112);
+            this.patternEdit.Location = new System.Drawing.Point(13, 173);
             this.patternEdit.Name = "patternEdit";
             this.patternEdit.Size = new System.Drawing.Size(425, 20);
             this.patternEdit.TabIndex = 9;
@@ -263,7 +264,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 96);
+            this.label2.Location = new System.Drawing.Point(10, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 8;
@@ -272,7 +273,7 @@
             // dateFormatEdit
             // 
             this.dateFormatEdit.HideSelection = false;
-            this.dateFormatEdit.Location = new System.Drawing.Point(12, 267);
+            this.dateFormatEdit.Location = new System.Drawing.Point(13, 328);
             this.dateFormatEdit.Name = "dateFormatEdit";
             this.dateFormatEdit.Size = new System.Drawing.Size(425, 20);
             this.dateFormatEdit.TabIndex = 11;
@@ -281,7 +282,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 251);
+            this.label3.Location = new System.Drawing.Point(10, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 10;
@@ -311,6 +312,7 @@
             // 
             // editSelectedPatternGroupBox
             // 
+            this.editSelectedPatternGroupBox.Controls.Add(this.label5);
             this.editSelectedPatternGroupBox.Controls.Add(this.tryOnCurrentLogButton);
             this.editSelectedPatternGroupBox.Controls.Add(this.dateFormatPatternsListView);
             this.editSelectedPatternGroupBox.Controls.Add(this.patternTextPatternsListView);
@@ -330,6 +332,16 @@
             this.editSelectedPatternGroupBox.TabStop = false;
             this.editSelectedPatternGroupBox.Text = "Edit selected pattern";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(399, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Automatically apply this pattern when log file name matches one of following mask" +
+    "s:";
+            // 
             // tryOnCurrentLogButton
             // 
             this.tryOnCurrentLogButton.Location = new System.Drawing.Point(258, 466);
@@ -347,10 +359,10 @@
             this.columnHeader4});
             this.dateFormatPatternsListView.FullRowSelect = true;
             this.dateFormatPatternsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.dateFormatPatternsListView.Location = new System.Drawing.Point(12, 287);
+            this.dateFormatPatternsListView.Location = new System.Drawing.Point(13, 348);
             this.dateFormatPatternsListView.MultiSelect = false;
             this.dateFormatPatternsListView.Name = "dateFormatPatternsListView";
-            this.dateFormatPatternsListView.Size = new System.Drawing.Size(425, 174);
+            this.dateFormatPatternsListView.Size = new System.Drawing.Size(425, 115);
             this.dateFormatPatternsListView.TabIndex = 14;
             this.dateFormatPatternsListView.UseCompatibleStateImageBehavior = false;
             this.dateFormatPatternsListView.View = System.Windows.Forms.View.Details;
@@ -373,7 +385,7 @@
             this.columnHeader2});
             this.patternTextPatternsListView.FullRowSelect = true;
             this.patternTextPatternsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.patternTextPatternsListView.Location = new System.Drawing.Point(12, 132);
+            this.patternTextPatternsListView.Location = new System.Drawing.Point(13, 193);
             this.patternTextPatternsListView.MultiSelect = false;
             this.patternTextPatternsListView.Name = "patternTextPatternsListView";
             this.patternTextPatternsListView.Size = new System.Drawing.Size(425, 107);
@@ -458,5 +470,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button tryOnCurrentLogButton;
         private System.Windows.Forms.Button viewCurrentLogAsTextButton;
+        private System.Windows.Forms.Label label5;
     }
 }

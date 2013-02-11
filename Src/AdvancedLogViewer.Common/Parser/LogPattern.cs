@@ -23,7 +23,9 @@ namespace AdvancedLogViewer.Common.Parser
                                                                               {"{Thread}", "Thread identification"},
                                                                               {"{Type}", "Type of log item (Debug, Error, ...)"},
                                                                               {"{Class}", "Class name"},
-                                                                              {"{Message}", "Log message, when continue on next line, it's automatically recognized."}};
+                                                                              {"{Message}", "Log message."},
+                                                                              {"$Spaces$" , "Variable amount of spaces in the text" }
+                                                                              };
 
         private string fileMask;
         private string patternText;
