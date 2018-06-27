@@ -966,12 +966,11 @@ namespace AdvancedLogViewer.UI
             {
                 log.Debug("Show markers...");
                 this.ShowMarkers();
-
-                if ((!this.logParser.ForcedLogPattern) && (this.logParser.LinesCount > 2) && (this.logParser.LogEntriesCount == 0) )
+                
+                if ((!this.logParser.ForcedLogPattern) && (this.logParser.LinesCount > 2) && (this.logParser.LogEntriesCount == 0))
                 {
                     TryLogPatternOnCurrentLog(new LogPattern("Unable to parse it, showing with default parser", "{Date}{Message}", ""));
                 }
-
 
                 log.Debug("Select some item");
                 if (this.goToLineAfterLoad != null)

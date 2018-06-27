@@ -70,7 +70,6 @@ namespace AdvancedLogViewer.Common.Parser
             this.PatternText = patternText;
             this.DateTimeFormat = dateTimeFormat;
         }
-        /**/
 
         public LogPattern(LogPattern copyFrom)
         {
